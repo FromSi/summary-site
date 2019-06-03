@@ -1,4 +1,4 @@
-# Summaru (Резюме)
+# Summary (Резюме)
 
 ## License
 ```
