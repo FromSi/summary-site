@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Avatar } from 'antd';
 
 /* Круг для компонента языка программирования. */
 export const LanguageColor = styled.span`
@@ -23,7 +24,7 @@ export const LanguageLayout = styled.div`
          width: min-content;
        `;
 
-/* Текст для компонента ЧИП */
+/* Текст для компонента ЧИП. */
 export const ChipText = styled.p`
          font-size: 12px;
          padding-left: 3px;
@@ -32,7 +33,19 @@ export const ChipText = styled.p`
          line-height: 0px;
        `;
 
-/* Макет для компонента ЧИП */
+/* Логотип организации. */
+export const LogoOrg = styled(Avatar)`
+         position: absolute;
+         left: -30%;
+       `;
+
+/* Макет для логотипов. */
+export const LogoLayout = styled.div`
+         display: inline-flex; 
+         width: min-content;
+       `;
+
+/* Макет для компонента ЧИП. */
 export const ChipLayout = styled.div`
          display: inline-flex;
          padding: 3px;
