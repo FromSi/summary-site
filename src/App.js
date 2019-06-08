@@ -1,14 +1,14 @@
 import React from "react";
-import {Status} from "./components/component/module"
+import {PersonalInfo} from "./components/fragment/module";
 
 class App extends React.Component {
-  render(){
-            return (
-              <div>
-                <Status width={200} height={100} />
-              </div>
-            );
-          }
+  render() {
+    return (
+      <div>
+        <PersonalInfo />
+      </div>
+    );
+  }
 }
 
 export default App;
