@@ -2,14 +2,15 @@ import React from "react";
 import {Icon} from "antd";
 import {ChipLayout} from "./style";
 
-/* Чип как в material design.
-   Ссылка на пример от material design:
-   https://material.io/design/components/chips.html
-*/
+/** 
+ * Чип как в material design.
+ * Ссылка на пример от material design:
+ * https://material.io/design/components/chips.html
+ */
 class Chip extends React.Component {
   render() {
 
-    // Данные для чипов
+    // Зарезервированные данные для чипов.
     const data = [
       {
         background: "#E0F2F1",

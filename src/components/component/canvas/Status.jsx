@@ -9,7 +9,7 @@ class Status extends React.Component {
     super(props);
     this.state = {
       heightCursor: 3,
-      color: ["#EF9A9A", "#FFE082", "#90CAF9", "#9FA8DA"],
+      color: ["#EF5350", "#FFD54F", "#1E88E5", "#7986CB"],
       rating: [0.35, 0.13, 0.24, 0.27],
       language: ["Java", "JS", "Python", "Kotlin"]
     };
@@ -36,6 +36,7 @@ class Status extends React.Component {
 
       array.push(
         <Rect
+          key={i}
           x={(this.props.width - this.state.heightProgress) * cursorSize}
           width={(this.props.width - this.state.heightProgress) * rating}
           height={this.state.heightProgress}
@@ -82,7 +83,7 @@ class Status extends React.Component {
       const language = state.language[i];
 
       array.push(
-        <Group>
+        <Group key={i}>
           <Rect
             y={rectY(i)}
             x={

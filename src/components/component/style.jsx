@@ -16,24 +16,47 @@ export const LanguageText = styled.p`
   margin: auto;
   padding-right: 3px;
   font-size: 12px;
+  font-weight: 500;
 `;
 
 /* Макет для компонента языка программирования. */
 export const LanguageLayout = styled.div`
   display: flex;
   width: min-content;
+  margin-top: 0;
+  margin-bottom: 0;
+`;
+
+/* Иконка для форка. */
+export const LanguageIcon = styled(Icon)`
+  height: 14px;
+  margin: auto;
 `;
 
 /* Логотип организации. */
-export const LogoOrg = styled(Avatar)`
+export const RepositoryNameOrg = styled(Avatar)`
   position: absolute;
-  left: -30%;
+  left: -14px;
 `;
 
 /* Макет для логотипов. */
-export const LogoLayout = styled.div`
+export const RepositoryNameLayout = styled.div`
   display: inline-flex;
-  width: min-content;
+  white-space: nowrap;
+
+  h1 {
+    margin-bottom: 0;
+  }
+`;
+
+/* Заголовок для логотипов. */
+export const RepositoryNameTitle = styled.h1`
+  position: relative;
+  left: ${props => `${-props.left}px`};
+  margin-left: 8px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 `;
 
 /* Макет для компонента ЧИП. */

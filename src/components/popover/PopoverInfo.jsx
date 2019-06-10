@@ -2,11 +2,13 @@ import React from "react";
 import {Icon, Popover, List} from "antd";
 import {TitleInfoLayout, ContentInfoLayout} from "./style";
 
-/* Всплывающая карточка с подробными данными персональной информации */
+/**
+ * Всплывающая карточка с подробными данными персональной информации.
+ */
 class PopoverInfo extends React.Component {
   render() {
 
-    // Данные для листа с информацией
+    // Зарезервированные данные для списка с информацией о пользователе.
     const data = [
       {
         first: "За",
@@ -48,7 +50,7 @@ class PopoverInfo extends React.Component {
       }
     ];
 
-    // Заголовок карточки
+    // Заголовок карточки.
     const title = (
       <TitleInfoLayout>
         <h1>Вебер-Пфляумер Владислав Витальевич</h1>
@@ -56,7 +58,7 @@ class PopoverInfo extends React.Component {
       </TitleInfoLayout>
     );
 
-    // Скелет листа с данными
+    // Скелет листа с данными.
     const content = (
       <ContentInfoLayout
         size="small"

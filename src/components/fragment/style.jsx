@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {Card} from "antd";
+import {Card, List} from "antd";
 
 /* Макет для персонального фрагмента. */
 export const PersonalInfoLayout = styled(Card)`
   width: fit-content;
 
-  *{
-    font-family: 'Roboto', sans-serif;
+  * {
+    font-family: "Roboto", sans-serif;
   }
 
   h1,
@@ -37,5 +37,71 @@ export const PersonalInfoLayout = styled(Card)`
         margin-right: auto;
       }
     }
+  }
+`;
+
+/* Макет для карточки. */
+export const CardLayout = styled(Card)`
+  width: min-content;
+`;
+
+/* Макет для списка. */
+export const ListLayout = styled(List)`
+  height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+  }
+`;
+
+/* Макет для основы */
+export const HistoryLayout = styled.div`
+  display: flex;
+  position: relative;
+  width: 400px;
+  margin-bottom: 8px;
+
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  div {
+    display: flex;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    div {
+      margin-left: 8px;
+    }
+
+    * {
+      margin-bottom: 0;
+      height: min-content;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      height: 16px;
+    }
+  }
+
+  .statistic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 `;

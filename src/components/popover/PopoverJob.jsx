@@ -3,11 +3,13 @@ import {Icon, Popover, List} from "antd";
 import {TitleJobLayout, ContentJobLayout, IconJob} from "./style";
 import {Chip} from "../component/module";
 
-/* Всплывающая карточка с подробными данными о работе */
+/**
+ * Всплывающая карточка с подробными данными о работе.
+ */
 class PopoverJob extends React.Component {
   render() {
 
-    // Данные для листа с информацией
+    // Зарезервированные данные для листа с информацией.
     const data = [
       {icon: "security-scan", text: "Ищу работу", color: "#9575CD"},
       {icon: "control", text: "Полная занятость", color: "#7986CB"},
@@ -15,7 +17,7 @@ class PopoverJob extends React.Component {
       {icon: "home", text: "Офис", color: "#0288D1"}
     ];
 
-    // Заголовок карточки
+    // Заголовок карточки.
     const title = (
       <TitleJobLayout>
         <h1>Работа</h1>
@@ -24,7 +26,7 @@ class PopoverJob extends React.Component {
       </TitleJobLayout>
     );
 
-    // Скелет для листа
+    // Скелет для листа.
     const content = (
       <ContentJobLayout
         dataSource={data}

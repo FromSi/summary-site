@@ -1,7 +1,9 @@
 import React from "react";
 import {Avatar as AvatarAntD} from "antd";
 
-/* Аватар или фото человека данного резюме. */
+/**
+ * Аватар или фото человека данного резюме.
+ */
 class Avatar extends React.Component {
   render() {
     return (
